@@ -73,13 +73,13 @@ fi
 	read -p "是否安装被控端文件(首次执行必须安装)[y/N]" down_files
 	if [[ "$down_files" =~ ^[yY]$ ]]; then
 		echo "正在下载gost2.11版本"
-		wget http://cdn-hk.taoluyun.cc/bin/gost/2.11/gost -O /usr/bin/gost
+		wget https://raw.githubusercontent.com/GtxFury/ip_control.sh/master/gost -O /usr/bin/gost
 		chmod +x /usr/bin/gost
 		echo "正在下载被控端"
-		wget http://cdn-hk.taoluyun.cc/bin/ip_table -O /usr/bin/ip_table
+		wget https://raw.githubusercontent.com/GtxFury/ip_control.sh/master/ip_table -O /usr/bin/ip_table
 		chmod +x /usr/bin/ip_table
 		echo "正在下载brook"
-		wget http://cdn-hk.taoluyun.cc/bin/brook/brook -O /usr/bin/brook
+		wget https://raw.githubusercontent.com/GtxFury/ip_control.sh/master/brook -O /usr/bin/brook
 		chmod +x /usr/bin/brook
 	fi
 	echo "转发端初始完成！请手动添加定时任务！"
@@ -96,10 +96,10 @@ beikong1_chushihua(){
 	read -p "是否下载被控端文件(首次执行必须安装)[y/N]" down_files_1
 	if [[ "$down_files_1" =~ ^[yY]$ ]]; then
 		echo "正在下载gost2.11版本"
-		wget http://cdn-hk.taoluyun.cc/bin/gost/2.11/gost -O /usr/bin/gost
+		wget https://raw.githubusercontent.com/GtxFury/ip_control.sh/master/gost -O /usr/bin/gost
 		chmod +x /usr/bin/gost
 		echo "正在下载被控端"
-		wget http://cdn-hk.taoluyun.cc/bin/iptables_gost -O /usr/bin/iptables_gost
+		wget https://raw.githubusercontent.com/GtxFury/ip_control.sh/master/iptables_gost -O /usr/bin/iptables_gost
 		chmod +x /usr/bin/iptables_gost
 	fi
 	echo "被控端端初始完成！请手动添加定时任务！"
